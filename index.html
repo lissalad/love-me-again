@@ -11,55 +11,172 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Patrick+Hand&family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body class="bg-warning">
+  <body class="bg-warning" styles="">
     <!-- HEADER -->
-    <header
-      class="text-center d-flex flex-column justify-content-center align-items-center pt-2 bg-info"
-    >
-      <h1>Love Me Again!</h1>
-      <h4>Second hand dolls give double the love!</h4>
+    <header class="text-center d-flex flex-column align-items-center pt-2">
+      <h1 styles="">Love Me Again!</h1>
+      <h5 styles="">Second hand dolls give double the love!</h5>
+
       <!-- NAVBAR -->
-      <div class="navbar navbar-nav mt-3 d-flex flex-row justify-content-around w-50 bg-light">
-        <a class="nav-item">About Us</a>
+      <div class="navbar navbar-nav mt-3 d-flex flex-row justify-content-center w-75 flex-nowrap">
+        <a class="nav-item w-75">About Us</a>
         <p class="m-0">|</p>
-        <a class="nav-item">SHOP</a>
+        <a class="nav-item w-75">Shop</a>
         <p class="m-0">|</p>
-        <a class="nav-item">REAL Stories</a>
+        <a class="nav-item w-75">Real Stories</a>
       </div>
     </header>
 
-    <div class="container w-100 mt-5 mb-3 text-center">
-      <!-- stories -->
-      <h2>Every doll has a story.</h2>
-      <div class="row mt-5">
-        <div class="col-6 d-flex flex-row">
-          <img class="m-2" src="./images/romina.jpg" height=200 width=auto </img>
-          <div>
-            <h3>Meet Doll</h3>
-          <p>this is a great doll that you should definitely buy she is not haunted not evil has not killed four families and is good withn children.</p>
-          
+    <!-- stories -->
+    <div class="m-5">
+      <div class="container-fluid w-100 text-center">
+        <h2>Every doll has a story.</h2>
+        <div class="row mt-5 justify-content-around">
+          <div class="col-xl-6 d-flex flex-row align-items-center">
+            <img class="m-2" src="./images/abby.jpg" height="300" width="auto" />
+            <div>
+              <h3>Meet Abby</h3>
+              <p class="m-3">
+                Abby loves to draw. Drawing is her favorite! She uses her colored pencils to draw
+                grass, trees, birds, children, parents, babies, and everything around her. As a doll
+                with a plastic mouth, art is how she best expresses herself.
+              </p>
+              <button class="" type="submit">Add to Cart</button>
+            </div>
           </div>
-          
+          <div class="col-xl-6 d-flex flex-row align-items-center">
+            <img class="m-2" src="./images/sarah.jpg" height="400" width="auto" />
+            <div>
+              <h3>Meet Sarah</h3>
+              <p class="m-3">
+                Sarah loves the outdoors. Sometimes she comes off as shy. In nature is where she
+                feels she can truly be herself. Bring Sarah to play with in a forest and see her
+                come to life! Her spirit is especially strong at night.
+              </p>
+              <button class="" type="submit">Add to Cart</button>
+            </div>
+          </div>
         </div>
-
-        <div class="col-6"></div>
       </div>
+    </div>
 
-      <!-- look alike -->
-      <div class="row mt-5">
-        <h2>Find a doll the looks just like YOU!</h2>
+    <!-- look alike -->
+    <div class="m-5">
+      <h2 class="text-center">Find a doll that looks just like YOU!</h2>
+      <div class="container-fluid d-flex justify-content-center">
+        <form class="row mt-5 w-100 justify-content-left">
+          <div class="col-2 text-center">
+            <div>
+              <h4>Eye Color:</h4>
+            </div>
+            <div>
+              <input type="radio" name="eye" id="blue" checked />
+              <label for="blue">Blue</label>
+            </div>
+            <div>
+              <input type="radio" name="eye" id="green" />
+              <label for="green">Green</label>
+            </div>
+            <div>
+              <input type="radio" name="eye" id="brown" />
+              <label for="brown">Brown</label>
+            </div>
+          </div>
+
+          <div class="col-2 text-center">
+            <div>
+              <h4>Skin Color:</h4>
+            </div>
+            <div>
+              <input type="radio" name="skin" id="light" checked />
+              <label for="light">Light</label>
+            </div>
+            <div>
+              <input type="radio" id="green" />
+              <label for="green">Green</label>
+            </div>
+            <div>
+              <input type="radio" id="brown" />
+              <label for="brown">Brown</label>
+            </div>
+          </div>
+          <div class="col-2 text-center">
+            <div>
+              <h4>Eye Color:</h4>
+            </div>
+            <div>
+              <input type="radio" id="blue" checked />
+              <label for="blue">Blue</label>
+            </div>
+            <div>
+              <input type="radio" id="green" />
+              <label for="green">Green</label>
+            </div>
+            <div>
+              <input type="radio" id="brown" />
+              <label for="brown">Brown</label>
+            </div>
+          </div>
+          <div class="col-6 d-flex flex-column justify-content-center">
+            <img class="m-2" src="./images/abby.jpg" height="300" width="auto" />
+            <button class="" type="submit">Find My Look-Alike!</button>
+          </div>
+        </form>
       </div>
 
       <!-- customer gallery -->
-      <div class="row mt-5">
-        <h2>Pleased Customers</h2>
+      <div class="m-5">
+        <h2 class="text-center mt-5">Pleased Customers</h2>
+        <div class="m-5 d-flex flex-row align-items-center justify-content-center text-center">
+          <img class="" src="./images/child1.jpg" height="700" width="auto" />
+          <h1 class="col-6">"I love my doll."</h1>
+        </div>
+        <div class="m-5 d-flex flex-row align-items-center justify-content-center text-center">
+          <h1 class="col-6">"My doll and I have fun."</h1>
+          <img class="" src="./images/child2.jpg" height="700" width="auto" />
+        </div>
+        <div class="m-5 d-flex flex-row align-items-center justify-content-center text-center">
+          <img class="" src="./images/child3.jpg" height="700" width="auto" />
+          <h1 class="col-6">"This is my favorite doll."</h1>
+        </div>
       </div>
 
-      <!-- news -->
-      <div class="row mt-5">
-        <h2>Heard of us before?</h2>
-      </div>
+      <script src="scripts.js"></script>
+
+      <style>
+        body {
+          background-image: url("./images/lace2.png");
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: cover;
+        }
+
+        h1,
+        h2 {
+          font-family: "Satisfy", cursive;
+        }
+        a,
+        p,
+        h3,
+        h5,
+        button,
+        label {
+          font-family: "Patrick Hand", cursive;
+        }
+
+        .navbar {
+          background-color: rgb(235, 145, 145);
+          border-radius: 10px;
+        }
+      </style>
     </div>
   </body>
 </html>
