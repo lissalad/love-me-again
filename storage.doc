@@ -1,0 +1,83 @@
+<!-- look alike -->
+    <div class="m-5">
+      <h2 class="text-center">Find a doll that looks just like YOU!</h2>
+      <div class="container-fluid">
+        <div class="row">
+          <!-- FORM -->
+          <form class="mt-5 w-100 col-6">
+            <!-- EYE COLOR -->
+            <div class="row field text-right">
+              <div class="col">
+                <h4>Eye Color:</h4>
+              </div>
+              <div class="col-2">
+                <div>
+                  <input type="radio" name="eye" id="blue" checked />
+                  <label for="blue">Blue</label>
+                </div>
+                <div>
+                  <input type="radio" name="eye" id="green" />
+                  <label for="green">Green</label>
+                </div>
+                <div>
+                  <input type="radio" name="eye" id="brown" />
+                  <label for="brown">Brown</label>
+                </div>
+              </div>
+            </div>
+          </section>
+            <!-- SKIN COLOR -->
+            <div class="row field">
+              <div class="col-3">
+                <h4>Skin Color:</h4>
+              </div>
+              <div class="col-2">
+                <div>
+                  <input type="radio" name="skin" id="light" checked />
+                  <label for="light">Light</label>
+                </div>
+                <div>
+                  <input type="radio" id="medium" name="skin" />
+                  <label for="medium">Medium</label>
+                </div>
+                <div>
+                  <input type="radio" id="dark" name="skin" />
+                  <label for="dark">Dark</label>
+                </div>
+              </div>
+            </div>
+
+            <!-- HAIR COLOR -->
+            <div class="row field">
+              <div class="col-3">
+                <h4>Hair Color:</h4>
+              </div>
+              <div class="col-2">
+                <div>
+                  <input type="radio" id="blonde" name="hair" checked />
+                  <label for="blonde">Blonde</label>
+                </div>
+                <div>
+                  <input type="radio" id="red" name="hair" />
+                  <label for="red">Red</label>
+                </div>
+                <div>
+                  <input type="radio" id="brown" name="hair" a />
+                  <label for="brown">Brown</label>
+                </div>
+              </div>
+            </div>
+
+            <!-- BUTTON -->
+            <div class="row field">
+              <button class="col-3" type="submit">Find My Look-Alike!</button>
+            </div>
+          </form>
+
+          <!-- RESULT -->
+          <div class="col-6 d-flex flex-column justify-content-center">
+            <img class="m-2" src="./images/abby.jpg" height="auto" width="auto" />
+          </div>
+        </div>
+      </div>
+    </div>
