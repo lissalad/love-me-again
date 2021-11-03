@@ -11,6 +11,7 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     />
+    <link rel="stylesheet" href="styles.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,15 +22,21 @@
   </head>
   <body class="" styles="">
     <!-- HEADER -->
-    <header class="text-center d-flex flex-column align-items-center p-5">
+    <header class="text-center d-flex flex-column align-items-center">
       <h1 styles="">Love Me Again!</h1>
       <h5 styles="">Second hand dolls give double the love!</h5>
 
       <!-- NAVBAR -->
-      <div class="navbar navbar-nav mt-3 d-flex flex-row w-50 flex-nowrap">
-        <a class="nav-item w-100">Shop</a>
-        <a class="nav-item w-100">Updates</a>
-        <a class="nav-item w-100">About Us</a>
+      <div class="navbar navbar-nav mt-3 d-flex flex-row w-50 flex-nowrap justify-content-around">
+        <a href="index.html" class="nav-item"
+          ><img src="./images/home.png" height="55" alt="home"
+        /></a>
+        <a href="shop.html" class="nav-item"
+          ><img src="./images/dolly.png" height="60" alt="shop dolls"
+        /></a>
+        <a href="checkout.html" class="nav-item"
+          ><img src="./images/basket.png" height="60" alt="checkout"
+        /></a>
       </div>
     </header>
     <main>
@@ -71,36 +78,79 @@
       </a>
     </div> -->
 
+      <!-- <section>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col">
+              <img class="m-2" src="./images/abby.jpg" height="300" width="auto" />
+            </div>
+            <div class="col text-center">
+              <h3>Meet Abby</h3>
+              <p class="m-3">
+                Abby loves to draw. Drawing is her favorite! She uses her colored pencils to draw
+                grass, trees, birds, children, parents, babies, and everything around her. As a doll
+                with a plastic mouth, art is how she best expresses herself.
+              </p>
+              <button class="" type="submit">Add to Cart</button>
+            </div>
+            <div class="col-auto"></div>
+            <div class="col">
+              <img class="m-2" src="./images/sarah.jpg" height="400" width="auto" />
+            </div>
+            <div class="col">
+              <div class="col">
+                <h3>Meet Sarah</h3>
+                <p class="m-3">
+                  Sarah loves the outdoors. Sometimes she comes off as shy. In nature is where she
+                  feels she can truly be herself. Bring Sarah to play with in a forest and see her
+                  come to life! Her spirit is especially strong at night.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+
       <!-- meet doll -->
       <section>
         <div class="m-5">
-          <div class="container-fluid w-100 text-center">
-            <h2>Every doll has a story.</h2>
-            <div class="row mt-5 justify-content-around">
+          <h2 class="text-center">Every doll has a story.</h2>
+          <div
+            class="
+              container-fluid
+              w-50
+              text-center
+              d-flex
+              justify-content-center
+              align-items-center
+            "
+          >
+            <div class="mt-5">
               <!-- ABBY -->
-              <div class="col-xl-6 d-flex flex-row align-items-center">
-                <img class="m-2" src="./images/abby.jpg" height="300" width="auto" />
-                <div>
+              <div class="row mb-4 d-flex align-items-center">
+                <div class="col">
                   <h3>Meet Abby</h3>
                   <p class="m-3">
                     Abby loves to draw. Drawing is her favorite! She uses her colored pencils to
                     draw grass, trees, birds, children, parents, babies, and everything around her.
                     As a doll with a plastic mouth, art is how she best expresses herself.
                   </p>
-                  <button class="" type="submit">Add to Cart</button>
+                  <button class="mb-3" type="submit">Add to Cart</button>
                 </div>
+                <img class="m-2" src="./images/abby.jpg" height="300" width="auto" />
               </div>
+              <div class="col"></div>
               <!-- SARAH -->
-              <div class="col-xl-6 d-flex flex-row align-items-center">
+              <div class="row mb-4 d-flex align-items-center">
                 <img class="m-2" src="./images/sarah.jpg" height="400" width="auto" />
-                <div>
+                <div class="col">
                   <h3>Meet Sarah</h3>
                   <p class="m-3">
                     Sarah loves the outdoors. Sometimes she comes off as shy. In nature is where she
                     feels she can truly be herself. Bring Sarah to play with in a forest and see her
                     come to life! Her spirit is especially strong at night.
                   </p>
-                  <button class="" type="submit">Add to Cart</button>
+                  <button class="mb-3" type="submit">Add to Cart</button>
                 </div>
               </div>
             </div>
@@ -112,14 +162,14 @@
       <section>
         <h2 class="text-center mt-5">Find your Look-Alike!</h2>
 
-        <div class="container-fluid">
+        <div class="container w-50 bg-warning">
           <!-- FORM -->
-          <div class="row mt-5">
-            <div class="col-6 mt-5">
+          <div class="row nowrap mt-5">
+            <div class="col-4 mt-5 bg-danger">
               <!-- EYE COLOR -->
               <div class="row">
-                <div class="col-2 offset-7"><h4>Eyes:</h4></div>
-                <div class="col-2">
+                <div class="col"><h4>Eyes:</h4></div>
+                <div class="col">
                   <div>
                     <input type="radio" name="eye" id="blue" checked />
                     <label for="blue">Blue</label>
@@ -136,8 +186,8 @@
               </div>
               <!-- HAIR COLOR -->
               <div class="row mt-4">
-                <div class="col-2 offset-7"><h4>Hair:</h4></div>
-                <div class="col-2">
+                <div class="col"><h4>Hair:</h4></div>
+                <div class="col">
                   <div>
                     <input type="radio" id="blonde" name="hair" checked />
                     <label for="blonde">Blonde</label>
@@ -154,8 +204,8 @@
               </div>
               <!-- SKIN COLOR -->
               <div class="row mt-4">
-                <div class="col-2 offset-7"><h4>Skin:</h4></div>
-                <div class="col-2">
+                <div class="col"><h4>Skin:</h4></div>
+                <div class="col">
                   <div>
                     <input type="radio" name="skin" id="light" checked />
                     <label for="light">Light</label>
@@ -172,13 +222,12 @@
               </div>
               <!-- BUTTON -->
               <div class="row">
-                <button class="col-3 offset-7 mt-5" type="submit">Find My Look-Alike!</button>
+                <button class="col mt-5" type="submit">Find My Look-Alike!</button>
               </div>
             </div>
-
             <!-- IMAGE -->
-            <div class="col-6 img-fluid">
-              <img class="m-2" src="./images/sil.png" height="500" width="auto" />
+            <div class="col-8 bg-primary">
+              <img class="look-alike" src="./images/sil.png" height="" width="" />
             </div>
           </div>
         </div>
@@ -188,25 +237,28 @@
       <section>
         <div class="m-5">
           <h2 class="text-center mt-5">Pleased Customers</h2>
-          <div class="m-5 d-flex flex-row align-items-center justify-content-center text-center">
-            <img class="" src="./images/child1.jpg" height="700" width="auto" />
-            <h1 class="col-6">"I love my doll."</h1>
-          </div>
-          <div class="m-5 d-flex flex-row align-items-center justify-content-center text-center">
-            <h1 class="col-6">"My doll and I have fun."</h1>
-            <img class="" src="./images/child2.jpg" height="700" width="auto" />
-          </div>
-          <div class="m-5 d-flex flex-row align-items-center justify-content-center text-center">
-            <img class="" src="./images/child3.jpg" height="700" width="auto" />
-            <h1 class="col-6">"This is my favorite doll."</h1>
+          <div class="container-fluid w-75">
+            <div class="m-5 d-flex flex-row align-items-center justify-content-center text-center">
+              <img class="" src="./images/child1.jpg" height="400" width="auto" />
+              <h1 class="col-6">"I love my doll."</h1>
+            </div>
+            <div class="m-5 d-flex flex-row align-items-center justify-content-center text-center">
+              <h1 class="col-6">"My doll and I have fun."</h1>
+              <img class="" src="./images/child2.jpg" height="400" width="auto" />
+            </div>
+            <div class="m-5 d-flex flex-row align-items-center justify-content-center text-center">
+              <img class="" src="./images/child3.jpg" height="400" width="auto" />
+              <h1 class="col-6">"This is my favorite doll."</h1>
+            </div>
           </div>
         </div>
       </section>
     </main>
+
     <footer>
       <!-- disclaimer -->
-      <div class="text-center text-white pt-5 pb-3">
-        <h3>LEGAL DISCLAIMER</h3>
+      <div class="text-center text-white pt-5 pb-3 m-3">
+        <h5>LEGAL DISCLAIMER</h5>
         <p>
           By visiting https://lovemeagaindolls.com you are consenting to them. You hand over all
           rights and privacy. You surrender free will.
@@ -216,45 +268,4 @@
   </body>
 
   <script src="scripts.js"></script>
-
-  <style>
-    body {
-      background-image: url("./images/lace2.png");
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      background-size: cover;
-    }
-
-    .field {
-      margin: 30px;
-    }
-
-    h1,
-    h2 {
-      font-family: "Satisfy", cursive;
-    }
-    a,
-    p > main,
-    h3 > main,
-    h5,
-    button,
-    label {
-      font-family: "Patrick Hand", cursive;
-    }
-
-    .navbar {
-      background-color: rgba(235, 145, 145, 0.473);
-      border-radius: 10px;
-    }
-
-    img {
-      border: 14px hidden #9c9c9c;
-      border-radius: 7px;
-    }
-
-    footer {
-      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-      background-color: rgb(175, 135, 130);
-    }
-  </style>
 </html>

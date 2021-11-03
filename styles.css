@@ -1,0 +1,46 @@
+body {
+  background-image: url("./images/lace2.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+header {
+  margin-top: 30px;
+}
+
+h1,
+h2 {
+  font-family: "Satisfy", cursive;
+}
+a,
+p,
+h3,
+h5,
+button,
+label,
+p > section {
+  font-family: "Patrick Hand", cursive !important;
+}
+
+.look-alike {
+  max-width: 80%;
+}
+
+.navbar {
+  /* background-color: rgba(243, 243, 243, 0.856); */
+  border-radius: 10px;
+}
+
+img {
+  border-radius: 7px;
+}
+
+footer {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif !important;
+  background-color: rgb(175, 135, 130) !important;
+}
+
+section {
+  margin-bottom: 140px !important;
+}
