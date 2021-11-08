@@ -3,10 +3,21 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  background-position: center;
 }
 
 header {
-  margin-top: 30px;
+}
+
+.cap {
+  padding: 12px;
+  margin-bottom: 4vh;
+  background-color: rgba(247, 231, 233, 0.295);
+  color: black;
+}
+
+.happy-child {
+  width: 350px;
 }
 
 h1,
@@ -19,17 +30,26 @@ h3,
 h5,
 button,
 label,
-p > section {
+p {
   font-family: "Patrick Hand", cursive !important;
 }
 
 .look-alike {
-  max-width: 80%;
+  width: 100%;
 }
 
 .navbar {
   /* background-color: rgba(243, 243, 243, 0.856); */
   border-radius: 10px;
+  width: 60%;
+}
+
+.divider {
+  width: 30%;
+  display: flex;
+  /* justify-content: center; */
+  margin-left: auto;
+  margin-right: auto;
 }
 
 img {
@@ -43,4 +63,8 @@ footer {
 
 section {
   margin-bottom: 140px !important;
+}
+
+.title {
+  margin: 2%;
 }
