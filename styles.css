@@ -30,8 +30,13 @@ h3,
 h5,
 button,
 label,
-p {
+p,
+figcaption {
   font-family: "Patrick Hand", cursive !important;
+}
+
+figcaption {
+  font-size: 2.3em;
 }
 
 .look-alike {
@@ -41,11 +46,15 @@ p {
 .navbar {
   /* background-color: rgba(243, 243, 243, 0.856); */
   border-radius: 10px;
-  width: 60%;
+  width: 55%;
+}
+
+button {
+  border-radius: 4px;
 }
 
 .divider {
-  width: 30%;
+  width: 50%;
   display: flex;
   /* justify-content: center; */
   margin-left: auto;
